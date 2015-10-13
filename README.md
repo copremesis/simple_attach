@@ -5,22 +5,26 @@ start new rails instance
 ```bash
 rails new simple_attach
 ```
+* create controller
+```bash
+rails g upload
+```
 
-* create simple form 
+* create simple form  __root/app/views/upload/index.html.erb__
 ```html
 <form method=POST action= '/upload' enctype="multipart/form-data">
   <input name="upload[file]" type=file /> <br>
   <input type=submit value=upload>
 </form>
 ```
-* create routes
+* create routes __root/config/routes.rb__
 ```ruby
 SimpleAttach::Application.routes.draw do
   root 'upload#index'
   post '/upload' => 'upload#attach'
 end
 ```
-* process file 
+* process file  __root/app/controllers/index.rb__
 ```ruby
   def attach
     #simplest form of attachment
