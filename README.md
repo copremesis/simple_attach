@@ -50,7 +50,8 @@ inside view:
 <%= file %> <br>
 <% end %>
 ```
-example use:
+example use:<br>
+
 ![Imgur](http://i.imgur.com/uyRL8HT.png)
 
 ###Chapter 3.
