@@ -50,8 +50,20 @@ inside view:
 <%= file %> <br>
 <% end %>
 ```
+example use:
+![Imgur](http://i.imgur.com/uyRL8HT.png)
 
-###Chapter 2.
+###Chapter 3.
+
+lets add some styles like css/ boot strap
+
+###Chapter 4. 
+DB sync and how to migrate uploads as 
+  repo
+  automous DB
+  etc ..
+
+###Chapter 5. 
 
 lets get ajaxy and do some HTML5 or something cool like drag and drop 
 so we can add slew of files all at once ... 
@@ -63,13 +75,3 @@ we're a car dealer
 
 we don't want to drag or type out 100's of names to images ... when we can select them all using the file explorer
 then upload them in one swoop with a progress bar status I think that is good for today's standards
-
-
-###Chapter 3. 
-DB sync and how to migrate uploads as 
-  repo
-  automous DB
-  etc ..
-
-
-
