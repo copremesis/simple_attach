@@ -10,21 +10,21 @@ rails new simple_attach
 rails g upload
 ```
 
-* create simple form  __root/app/views/upload/index.html.erb__
+* create simple form  _root/app/views/upload/index.html.erb_
 ```html
 <form method=POST action= '/upload' enctype="multipart/form-data">
   <input name="upload[file]" type=file /> <br>
   <input type=submit value=upload>
 </form>
 ```
-* create routes __root/config/routes.rb__
+* create routes _root/config/routes.rb_
 ```ruby
 SimpleAttach::Application.routes.draw do
   root 'upload#index'
   post '/upload' => 'upload#attach'
 end
 ```
-* process file  __root/app/controllers/index.rb__
+* process file  _root/app/controllers/index.rb_
 ```ruby
   def attach
     #simplest form of attachment
