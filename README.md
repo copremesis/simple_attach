@@ -74,5 +74,16 @@ we're a car dealer
       golf coach
       music major
 
-we don't want to drag or type out 100's of names to images ... when we can select them all using the file explorer
+we don't want to drag or type out 100's of files when we can select them all using the file explorer
 then upload them in one swoop with a progress bar status I think that is good for today's standards
+
+
+###Chapter 6.
+
+optimize 
+  * backgroundjob
+  * redis/resque
+
+###Chapter 7. 
+
+  mime types 
