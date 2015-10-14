@@ -142,7 +142,7 @@ and to handle multiple files we now have:
 ```
 
 New look and tests performed
-![bootstrap added](http://i.imgur.com/08bLoEi.png)
+![Imgur](http://i.imgur.com/HuMUF4Q.png)
 
 ###Chapter 3. 
 Do we need a database to attach files? This was the primary reason for my need to abandon applications
