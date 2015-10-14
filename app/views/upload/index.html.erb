@@ -1,8 +1,22 @@
 
 <form method=POST action= '/upload' enctype="multipart/form-data">
-  <input name="upload[file]" type=file /> <br>
-  <input type=submit value=upload>
+    <div class='container'>
+      <div class="row">
+        <div class="col-md-6">
+          <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+          <input name="files[]" type=file multiple/> 
+        </div>
+        <div class="col-md-6">
+          <input type=submit value=upload>
+        </div>
+      </div>
+    </div>
 </form>
-<% @files.each do |file| %>
-<%= file %> <br>
-<% end %>
+
+<ul class="list-group">
+  <% @files.each do |file| %>
+    <li class="list-group-item"><%= file %>  </li>
+  <% end %>
+</ul>
+
+
