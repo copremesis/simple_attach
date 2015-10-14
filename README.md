@@ -161,13 +161,16 @@ If anything we now are at a place where we should write tests and refactor as th
 
 ###Chapter 4. 
 
-lets get ajaxy and do some HTML5 or something cool like drag and drop 
+Lets get ajaxy and do some HTML5 or something cool like drag and drop 
+
 so we can add slew of files all at once ... 
-we're a car dealer
-      a web designer
-      real estate ajent
-      golf coach
-      music major
+possbile use cases:
+
+* a car dealer
+* a web designer
+* real estate agent
+* golf coach
+* music major
 
 we don't want to drag or type out 100's of files when we can select them all using the file explorer
 then upload them in one swoop with a progress bar status I think that is good for today's standards
@@ -175,10 +178,19 @@ then upload them in one swoop with a progress bar status I think that is good fo
 
 ###Chapter 6.
 
+Blocking I/O will kill mobile. We must have an invisible _fast_ backend system to maximize the power of our handheld device.
+
 optimize 
   * backgroundjob
   * redis/resque
 
 ###Chapter 7. 
-
   mime types 
+
+  Now that we've transfered 1's & 0's from somwhere to our mother ship server lets now do something with these files:
+
+  render drawings ... build a montage ... 
+  create an animation etc ... 
+
+
+
