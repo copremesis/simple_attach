@@ -120,6 +120,14 @@ Also the to handle multiple files renamed the field name for files as such:
 ```
 
 The controller that handles this has now become:
+
+Inside the index controller I add this to use the bootstrap layout.
+
+```
+    render :layout => 'bootstrap'
+```
+and to handle multiple files we now have:
+
 ```ruby
   def attach
     #simplest form of attachment
@@ -133,11 +141,17 @@ The controller that handles this has now become:
   end
 ```
 
+New look and tests performed
+![bootstrap added](http://i.imgur.com/08bLoEi.png)
+
 ###Chapter 3. 
 Do we need a database to attach files? This was the primary reason for my need to abandon applications
 that center around a database -- hence the use of `ls` --- which keeps this light and thin 
 Also if I need to migrate this from one system dev->stage->production to another there's no 
 database to align with a file system. The file system is the __database__.
+
+
+If anything we now are at a place where we should write tests and refactor as the code is becoming complex.
 
 ###Chapter 4. 
 
