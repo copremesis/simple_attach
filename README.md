@@ -146,7 +146,13 @@ New look and tests performed
 
 ###Chapter 3. 
 Do we need a database to attach files? This was the primary reason for my need to abandon applications
-that center around a database -- hence the use of `ls` --- which keeps this light and thin 
+that center around a database -- hence the use of backticks vs sql queries 
+
+```ruby
+    @files = `ls #{Rails.root.join('public','uploads')}`.split(/\n/) 
+```
+
+Which keeps this light and thin 
 Also if I need to migrate this from one system dev->stage->production to another there's no 
 database to align with a file system. The file system is the __database__.
 
